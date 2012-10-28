@@ -1,0 +1,27 @@
+<p>
+	<strong>Title:</strong>
+	<%=@post.title %>
+</p>
+
+<p>
+	<strong>Author:</strong>
+	<%=@post.author%>
+</p>
+
+<p>
+	<strong>Email:</strong>
+	<%=@post.email%>
+</p>
+
+<p>
+	<strong>Mood:</strong>
+	<%=@post.mood%>
+</p>
+
+<p>
+	<strong>Text:</strong>
+	<%=@post.text%>
+</p>
+
+<%= link_to 'Back', action: :index %>
+| <%= link_to 'Edit', action: :edit, id: @post.id %>

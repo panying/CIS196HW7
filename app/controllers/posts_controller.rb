@@ -1,9 +1,13 @@
 class PostsController < ApplicationController
+
+before_filter :authenticate_user!
+
 def new
 	@post = Post.new
 end
 
 def destroy
+
   @post = Post.find(params[:id])
   @post.destroy
  
@@ -24,7 +28,13 @@ def show
 end
 
 def index
-	@posts = Post.all
+	#@posts = Post.excited
+	@post_excited = Post.excited
+	@post_happy = Post.happy
+	@post_normal = Post.normal
+	@post_disappointed = Post.disappointed
+	@post_sad =Post.sad
+	@post_angry=Post.angry
 end
 
 def edit

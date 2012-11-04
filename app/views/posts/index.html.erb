@@ -9,7 +9,7 @@
     <th>Text</th>
   </tr>
  
-  <% @posts.each do |post| %>
+  <% @post_excited.each do |post| %>
     <tr>
       <td><%= post.title %></td>
 	  <td><%= post.author %></td>
@@ -21,4 +21,70 @@
 	  <td><%= link_to 'Destroy', { action: :destroy, id: post.id }, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
+  
+    <% @post_happy.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+	  <td><%= post.author %></td>
+	  <td><%= post.email %></td>
+	  <td><%= post.mood %></td>
+      <td><%= post.text %></td>
+	  <td><%= link_to 'Show', action: :show, id: post.id %></td>
+	  <td><%= link_to 'Edit', action: :edit, id: post.id %></td>
+	  <td><%= link_to 'Destroy', { action: :destroy, id: post.id }, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  
+    <% @post_normal.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+	  <td><%= post.author %></td>
+	  <td><%= post.email %></td>
+	  <td><%= post.mood %></td>
+      <td><%= post.text %></td>
+	  <td><%= link_to 'Show', action: :show, id: post.id %></td>
+	  <td><%= link_to 'Edit', action: :edit, id: post.id %></td>
+	  <td><%= link_to 'Destroy', { action: :destroy, id: post.id }, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  
+      <% @post_sad.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+	  <td><%= post.author %></td>
+	  <td><%= post.email %></td>
+	  <td><%= post.mood %></td>
+      <td><%= post.text %></td>
+	  <td><%= link_to 'Show', action: :show, id: post.id %></td>
+	  <td><%= link_to 'Edit', action: :edit, id: post.id %></td>
+	  <td><%= link_to 'Destroy', { action: :destroy, id: post.id }, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  
+      <% @post_disappointed.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+	  <td><%= post.author %></td>
+	  <td><%= post.email %></td>
+	  <td><%= post.mood %></td>
+      <td><%= post.text %></td>
+	  <td><%= link_to 'Show', action: :show, id: post.id %></td>
+	  <td><%= link_to 'Edit', action: :edit, id: post.id %></td>
+	  <td><%= link_to 'Destroy', { action: :destroy, id: post.id }, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  
+        <% @post_angry.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+	  <td><%= post.author %></td>
+	  <td><%= post.email %></td>
+	  <td><%= post.mood %></td>
+      <td><%= post.text %></td>
+	  <td><%= link_to 'Show', action: :show, id: post.id %></td>
+	  <td><%= link_to 'Edit', action: :edit, id: post.id %></td>
+	  <td><%= link_to 'Destroy', { action: :destroy, id: post.id }, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  
 </table>

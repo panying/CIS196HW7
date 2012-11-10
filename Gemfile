@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
+gem 'newrelic_rpm'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -43,6 +45,8 @@ gem "devise", "~> 2.1.2"
 
 # To use debugger
 # gem 'debugger'
+
+
 
 group:development do
 gem 'sqlite3'

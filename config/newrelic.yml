@@ -1,4 +1,5 @@
 # Here are the settings that are common to all environments
+
 common: &default_settings
   # ============================== LICENSE KEY ===============================
 
@@ -42,7 +43,7 @@ common: &default_settings
 
   # Developer mode should be off in every environment but
   # development as it has very high overhead in memory.
-  developer_mode: false
+  developer_mode: true
 
   # The newrelic agent generates its own log file to keep its logging
   # information separate from that of your application.  Specify its

@@ -1,3 +1,32 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+function toggleDiv(divId) {
+   $("#"+divId).toggle();
+}
+
+$(document).ready(function() {
+     $('#ani').click(function() {
+          $('#pic').animate({
+               height: 'toggle'
+               }, 2000
+          );
+     });
+});
+</script>
+
+<p><a href="javascript:toggleDiv('help');">Help (Click me to hide or show the message.)</a></p>
+<div id="help" style="background-color: #aaa; padding: 5px 10px;">
+I don't know what I can help you with. Just click the buttons here you will be able to post new message and edit existing messages. Enjoy!
+</div>
+
+<div id="ani">
+  Animated Hide-and-Show Demo
+</div>
+<img id="pic" src="http://www.lolcats.com/images/u/12/24/lolcatsdotcompromdate.jpg" alt="It&#039;s me....ah!!!" title="Allen Liu" width="490" height="379" class="alignnone size-full wp-image-552" style="border: none;" />
+
+
+
+
 <h1>Welcome to Ying's Blog</h1>
 
 <%= link_to "My_Blog", controller: "posts" %>
